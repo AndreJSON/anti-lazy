@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "/home/mitre/Downloads/app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "C:\\Users\\lucas\\AndroidStudioProjects\\ProjectAppCourse\\anti-lazy\\app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "/home/mitre/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/b051e87fdabfff437243f40a09af803a/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\lucas\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\24b8434d474030136e8f14630410b07e\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\lucas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2780ae465b6cb36c1f668a7fbbea2a19\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,50 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/home/mitre/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5cbe26f5718373b9ffbad28e1886af5d/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/home/mitre/Downloads/anti-lazy-master/app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
-            "map": [
-                {
-                    "source": "/home/mitre/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/b051e87fdabfff437243f40a09af803a/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/home/mitre/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/5cbe26f5718373b9ffbad28e1886af5d/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]
