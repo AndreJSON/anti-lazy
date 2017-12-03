@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/mitre/Downloads/app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "outputFile": "C:\\Users\\lucas\\Documents\\Projekt\\anti-lazy\\app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "/home/mitre/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/b051e87fdabfff437243f40a09af803a/res/values-v25/values-v25.xml",
+                    "source": "C:\\Users\\lucas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2780ae465b6cb36c1f668a7fbbea2a19\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",
@@ -17,10 +17,26 @@
             ]
         },
         {
-            "outputFile": "/home/mitre/Downloads/anti-lazy-master/app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v25/values-v25.xml",
+            "outputFile": "C:\\home\\mitre\\Downloads\\anti-lazy-master\\app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "/home/mitre/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/b051e87fdabfff437243f40a09af803a/res/values-v25/values-v25.xml",
+                    "source": "C:\\home\\mitre\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b051e87fdabfff437243f40a09af803a\\res\\values-v25\\values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\home\\mitre\\Downloads\\app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
+            "map": [
+                {
+                    "source": "C:\\home\\mitre\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b051e87fdabfff437243f40a09af803a\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

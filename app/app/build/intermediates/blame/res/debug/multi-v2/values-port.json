@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/mitre/Downloads/app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "C:\\home\\mitre\\Downloads\\anti-lazy-master\\app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "/home/mitre/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/b051e87fdabfff437243f40a09af803a/res/values-port/values-port.xml",
+                    "source": "C:\\home\\mitre\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b051e87fdabfff437243f40a09af803a\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,25 @@
             ]
         },
         {
-            "outputFile": "/home/mitre/Downloads/anti-lazy-master/app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "outputFile": "C:\\Users\\lucas\\Documents\\Projekt\\anti-lazy\\app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "/home/mitre/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/b051e87fdabfff437243f40a09af803a/res/values-port/values-port.xml",
+                    "source": "C:\\Users\\lucas\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\2780ae465b6cb36c1f668a7fbbea2a19\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\home\\mitre\\Downloads\\app\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\home\\mitre\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\b051e87fdabfff437243f40a09af803a\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

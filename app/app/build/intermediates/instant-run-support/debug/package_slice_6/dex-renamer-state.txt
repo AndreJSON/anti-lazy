@@ -1,4 +1,4 @@
-#Sat Dec 02 20:18:15 CET 2017
-base.0=/home/mitre/Downloads/anti-lazy-master/app/app/build/intermediates/transforms/dexMerger/debug/25
+#Sun Dec 03 20:42:30 CET 2017
+base.0=C\:\\Users\\lucas\\Documents\\Projekt\\anti-lazy\\app\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\69
 path.0=classes.dex
 renamed.0=classes.dex
