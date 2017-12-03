@@ -1,0 +1,22 @@
+<md-tabs md-border-bottom md-swipe-content md-center-tabs>
+	<md-tab label="Today" md-on-select="changeTab('Today')">
+		<md-content class="md-padding" ng-controller="todayController" md-swipe-right>
+			<ng-include src="'partials/today.html'"></ng-include>
+		</md-content>
+	</md-tab>
+	<md-tab label="Log" md-on-select="changeTab('Activity Log')">
+		<md-content class="md-padding" ng-controller="logController" md-swipe-right>
+			<ng-include src="'partials/log.html'"></ng-include>
+		</md-content>
+	</md-tab>
+	<md-tab label="Map" md-on-select="changeTab('Map')">
+		<md-content class="md-padding" ng-controller="mapController" md-swipe-right>
+			<ng-include src="'partials/map.html'"></ng-include>
+		</md-content>
+	</md-tab>
+	<md-tab label="Rewards" md-on-select="changeTab('Rewards')">
+		<md-content class="md-padding" ng-controller="rewardsController" md-swipe-right>
+			<ng-include src="'partials/rewards.html'"></ng-include>
+		</md-content>
+	</md-tab>
+</md-tabs>

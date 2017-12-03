@@ -1,0 +1,19 @@
+<resources>
+    <string name="points">77 Points</string>
+    <string name="app_name">app</string>
+    <string name="nav_today">Today</string>
+    <string name="nav_log">Log</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_rewards">Rewards</string>
+
+    <string name="today_text">Today fragment</string>
+    <string name="log_text">Log fragment</string>
+    <string name="map_text">Map fragment</string>
+    <string name="rewards_text">Rewards fragment</string>
+    <string name="rewards_title">Rewards</string>
+
+
+    <string name="reward1">Reward 1</string>
+    <string name="reward2">Reward 2</string>
+    <string name="reward3">Reward 3</string>
+</resources>

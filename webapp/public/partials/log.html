@@ -1,0 +1,11 @@
+<md-list flex>
+	<md-list-item class="md-3-line" ng-repeat="item in data.activities">
+		<ng-md-icon icon="{{item.icon}}" size="44" style="fill: #809085; height:44px; width:44px; margin-top:22px;margin-bottom:22px; margin-right:22px;"></ng-md-icon>
+		<div class="md-list-item-text" layout="column">
+			<h3 style="color:{{item.points > 0 ? 'green' : 'red'}};opacity:0.87;">{{item.points > 0 ? '+' : ''}}{{item.points}}</h3>
+			<h4>{{item.time}}</h4>
+			<p>{{item.what}}</p>
+		</div>
+		<md-divider ng-if="!$last"></md-divider>
+	</md-list-item>
+</md-list>

@@ -1,0 +1,45 @@
+<md-list flex>
+	<md-list-item class="md-3-line" ng-repeat="item in data.activities | limitTo : 3 : 0">
+		<div class="md-list-item-text" layout="column">
+			<h3 style="color:{{item.points > 0 ? 'green' : 'red'}};opacity:0.87;">{{item.points > 0 ? '+' : ''}}{{item.points}}</h3>
+			<h4>{{item.time}}</h4>
+			<p>{{item.what}}</p>
+		</div>
+		<md-divider ng-if="!$last"></md-divider>
+	</md-list-item>
+</md-list>
+<div layout="row">
+	<div flex="33">
+		<h3 class="md-title aj-centered-text" style="margin-bottom:4px;">Wake up</h3>
+		<div layout="row">
+			<div flex></div>
+			<md-button aria-label="Wake up" ng-disabled="true" class="aj-no-space">
+				<ng-md-icon icon="schedule" size="32" style="height:32px; width:32px;"></ng-md-icon>
+			</md-button>
+			<div flex></div>
+		</div>
+		<h5 class="aj-centered-text" style="margin-top:6px;">Woke up 7:54</h5>
+	</div>
+	<div flex="33">
+		<h3 class="md-title aj-centered-text" style="margin-bottom:4px;">Work out</h3>
+		<div layout="row">
+			<div flex></div>
+			<md-button aria-label="Work out" ng-disabled="true" class="aj-no-space">
+				<ng-md-icon icon="schedule" size="32" style="height:32px; width:32px;"></ng-md-icon>
+			</md-button>
+			<div flex></div>
+		</div>
+		<h5 class="aj-centered-text" style="margin-top:6px;">0h 57m total</h5>
+	</div>
+	<div flex="33">
+		<h3 class="md-title aj-centered-text" style="margin-bottom:4px;">Go to bed</h3>
+		<div layout="row">
+			<div flex></div>
+			<md-button aria-label="Go to bed" ng-disabled="true" class="aj-no-space">
+				<ng-md-icon icon="schedule" size="32" style="height:32px; width:32px;"></ng-md-icon>
+			</md-button>
+			<div flex></div>
+		</div>
+		<h5 class="aj-centered-text" style="margin-top:6px;">3h 42m left</h5>
+	</div>
+</div>

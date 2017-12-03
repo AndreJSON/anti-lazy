@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<title>Don't be lazy!</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<!-- JS -->
+		<script src="/angular/angular.min.js"></script>
+		<script src="/angular-animate/angular-animate.min.js"></script>
+		<script src="/angular-aria/angular-aria.min.js"></script>
+		<script src="/angular-messages/angular-messages.min.js"></script>
+		<script src="/angular-material/angular-material.min.js"></script>
+		<script src="/angular-material-icons/angular-material-icons.min.js"></script>
+		<script src="/ngmap/ng-map.min.js"></script>
+		<!-- MY JS -->
+		<script src="/scripts/app.js"></script>
+		<script src="/scripts/controllers/main-controller.js"></script>
+		<script src="/scripts/controllers/settings-controller.js"></script>
+		<script src="/scripts/controllers/today-controller.js"></script>
+		<script src="/scripts/controllers/log-controller.js"></script>
+		<script src="/scripts/controllers/map-controller.js"></script>
+		<script src="/scripts/controllers/rewards-controller.js"></script>
+		<!-- CSS -->
+		<link rel="stylesheet" href="/angular-material-icons/angular-material-icons.css">
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+	<body ng-app="app" ng-controller="mainController" layout="column">
+		<ng-include src="'partials/toolbar.html'"></ng-include>
+		<div flex>
+			<ng-include src="'partials/container.html'"></ng-include>
+		</div>
+	</body>
+</html>

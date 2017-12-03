@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_today"
+        android:icon="@drawable/ic_history_black_24px"
+        android:title="@string/nav_today" />
+
+    <item
+        android:id="@+id/navigation_log"
+        android:icon="@drawable/ic_date_range_black_24px"
+        android:title="@string/nav_log" />
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_explore_black_24px"
+        android:title="@string/nav_map" />
+
+    <item
+        android:id="@+id/navigation_rewards"
+        android:icon="@drawable/ic_redeem_black_24px"
+        android:title="@string/nav_rewards" />
+
+</menu>
