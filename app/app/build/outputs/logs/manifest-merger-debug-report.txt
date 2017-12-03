@@ -1,9 +1,16 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-32:12
+=======
+ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+>>>>>>> a4a89c96431a89be9be23c3277a72ef15cafe99d
 MERGED from [com.android.support:design:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ecaa7de4b50f4214e9b312aa801cc8b0\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2780ae465b6cb36c1f668a7fbbea2a19\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\f71dac3ee8e2ebc9b1f6230e17986ddf\AndroidManifest.xml:2:1-11:12
@@ -26,6 +33,7 @@ MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\lucas\.gradle\caches
 MERGED from [com.google.android.gms:play-services-base-license:11.6.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\play-services-base-license-11.6.0.aar\5f4f0b03e557ec8ecb6ca105aa584a9b\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.0.aar\0c6b414b278b9ebe55397b4af0f412b7\AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\7b86ddb328ef6306b7a0bba06bb65448\AndroidManifest.xml:2:1-6:12
+<<<<<<< HEAD
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-32:12
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-32:12
@@ -57,6 +65,27 @@ ADDED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\a
 		ADDED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:7:22-78
 application
 ADDED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:9:5-30:19
+=======
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+	package
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:1-23:12
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:5:5-21:19
+>>>>>>> a4a89c96431a89be9be23c3277a72ef15cafe99d
 MERGED from [com.android.support:design:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ecaa7de4b50f4214e9b312aa801cc8b0\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ecaa7de4b50f4214e9b312aa801cc8b0\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2780ae465b6cb36c1f668a7fbbea2a19\AndroidManifest.xml:25:5-29:19
@@ -102,6 +131,7 @@ MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Us
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\7b86ddb328ef6306b7a0bba06bb65448\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\7b86ddb328ef6306b7a0bba06bb65448\AndroidManifest.xml:5:5-20
 	android:supportsRtl
+<<<<<<< HEAD
 		ADDED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
 		ADDED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml:12:9-41
@@ -139,6 +169,39 @@ uses-sdk
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml
+=======
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.app.MainActivity
+ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:12:9-20:20
+	android:label
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:14:13-43
+	android:name
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:13:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:15:13-19:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:16:17-69
+	android:name
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:16:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:18:17-77
+	android:name
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml:18:27-74
+uses-sdk
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+>>>>>>> a4a89c96431a89be9be23c3277a72ef15cafe99d
 MERGED from [com.android.support:design:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ecaa7de4b50f4214e9b312aa801cc8b0\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:design:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ecaa7de4b50f4214e9b312aa801cc8b0\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2780ae465b6cb36c1f668a7fbbea2a19\AndroidManifest.xml:21:5-23:78
@@ -183,6 +246,7 @@ MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Us
 MERGED from [com.google.android.gms:play-services-basement-license:11.6.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.6.0.aar\0c6b414b278b9ebe55397b4af0f412b7\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\7b86ddb328ef6306b7a0bba06bb65448\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks-license:11.6.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\play-services-tasks-license-11.6.0.aar\7b86ddb328ef6306b7a0bba06bb65448\AndroidManifest.xml:4:5-43
+<<<<<<< HEAD
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
@@ -195,6 +259,20 @@ INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\ap
 		INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\lucas\AndroidStudioProjects\ProjectAppCourse\anti-lazy\app\app\src\main\AndroidManifest.xml
+=======
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ecaa7de4b50f4214e9b312aa801cc8b0\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\lucas\Documents\Projekt\anti-lazy\app\app\src\main\AndroidManifest.xml
+>>>>>>> a4a89c96431a89be9be23c3277a72ef15cafe99d
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\design-26.1.0.aar\ecaa7de4b50f4214e9b312aa801cc8b0\AndroidManifest.xml:26:9-28:38
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\lucas\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\2780ae465b6cb36c1f668a7fbbea2a19\AndroidManifest.xml:26:9-28:38
