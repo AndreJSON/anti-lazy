@@ -12,7 +12,7 @@ var router = require('./routes.js');
 app.use('', router);
 
 var dbh = require('./dbhandler.js');
-dbh.test();
+dbh.printUser("Test");
 
 app.listen(port);
 console.log(chalk.green("Server is now listening on port: ") + chalk.magenta(port));
