@@ -84,4 +84,16 @@ router.delete('/reward', function (req, res) {
 	});
 });
 
+router.post('/log-entry', function (req, res) {
+	dbh.addLogEntry(req.body, function (err, user) {
+		if(err == null) {
+			res.json({data: user, success: true});
+		} else {
+			res.json({error: 'Something went wrong.', success: false});
+			console.log(err);
+		}
+		res.end();
+	});
+});
+
 module.exports = router;

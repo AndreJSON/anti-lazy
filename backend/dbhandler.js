@@ -48,4 +48,17 @@ dbh.removeReward = function (body, callback) {
 	models.user.update({_id: body.user_id},{$pull: {rewards: {_id: body.reward_id}}}, callback);
 };
 
+dbh.addLogEntry = function (body, callback) {
+	models.user.findByIdAndUpdate(body._id,
+		{$push: {log: {
+			points: body.points,
+			date: new Date(),
+			description: body.description,
+			category: body.category
+		}}},
+		{new : true},
+		callback
+	);
+};
+
 module.exports = dbh;
