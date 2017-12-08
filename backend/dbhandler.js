@@ -16,6 +16,7 @@ dbh.updateName = function (body, callback) {
 };
 
 dbh.addLocation = function (body, callback) {
+	console.log(body._id);
 	models.user.findByIdAndUpdate(body._id,
 		{$push: {locations: {
 			name: body.name,
@@ -30,6 +31,21 @@ dbh.addLocation = function (body, callback) {
 
 dbh.removeLocation = function (body, callback) {
 	models.user.update({_id: body.user_id},{$pull: {locations: {_id: body.location_id}}}, callback);
+};
+
+dbh.addReward = function (body, callback) {
+	models.user.findByIdAndUpdate(body._id,
+		{$push: {rewards: {
+			points: body.points,
+			description: body.description
+		}}},
+		{new : true},
+		callback
+	);
+};
+
+dbh.removeReward = function (body, callback) {
+	models.user.update({_id: body.user_id},{$pull: {rewards: {_id: body.reward_id}}}, callback);
 };
 
 module.exports = dbh;

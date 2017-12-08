@@ -4,7 +4,8 @@ var Schema = mongoose.Schema, ObjectId = Schema.ObjectId, models = {};
 var LocationSchema = new Schema({
 	name: String,
 	description: String,
-	coords: [Number]
+	coords: [Number],
+	category: String
 });
 
 var LogEntrySchema = new Schema({

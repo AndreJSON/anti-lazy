@@ -47,8 +47,40 @@ router.post('/location', function (req, res) {
 });
 
 router.delete('/location', function (req, res) {
-	dbh.removeLocation(req.body, function (err, user) {
-		console.log(user);
+	dbh.removeLocation(req.body, function (err, mongoResponse) {
+		if(err == null) {
+			res.json({success: true});
+		} else {
+			res.json({error: 'Something went wrong.', success: false});
+			console.log(err);
+			console.log(mongoResponse);
+		}
+		res.end();
+	});
+});
+
+router.post('/reward', function (req, res) {
+	dbh.addReward(req.body, function (err, user) {
+		if(err == null) {
+			res.json({data: user, success: true});
+		} else {
+			res.json({error: 'Something went wrong.', success: false});
+			console.log(err);
+		}
+		res.end();
+	});
+});
+
+router.delete('/reward', function (req, res) {
+	dbh.removeReward(req.body, function (err, mongoResponse) {
+		if(err == null) {
+			res.json({success: true});
+		} else {
+			res.json({error: 'Something went wrong.', success: false});
+			console.log(err);
+			console.log(mongoResponse);
+		}
+		res.end();
 	});
 });
 
