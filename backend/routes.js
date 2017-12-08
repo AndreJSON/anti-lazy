@@ -11,8 +11,7 @@ router.get('/', function (req, res) {
 });
 
 router.get('/user', function (req, res) {
-	var qs = req.query;
-	dbh.getUser(qs.name, function (err, user) {
+	dbh.getUser(req.query._id, function (err, user) {
 		if(err == null) {
 			res.json({data: user, success: true});
 		} else {
@@ -21,6 +20,36 @@ router.get('/user', function (req, res) {
 		}
 		res.end();
 	});
-})
+});
+
+router.post('/name', function (req, res) {
+	dbh.updateName(req.body, function (err, user) {
+		if(err == null) {
+			res.json({data: user, success: true});
+		} else {
+			res.json({error: 'Something went wrong.', success: false});
+			console.log(err);
+		}
+		res.end();
+	});
+});
+
+router.post('/location', function (req, res) {
+	dbh.addLocation(req.body, function (err, user) {
+		if(err == null) {
+			res.json({data: user, success: true});
+		} else {
+			res.json({error: 'Something went wrong.', success: false});
+			console.log(err);
+		}
+		res.end();
+	});
+});
+
+router.delete('/location', function (req, res) {
+	dbh.removeLocation(req.body, function (err, user) {
+		console.log(user);
+	});
+});
 
 module.exports = router;
