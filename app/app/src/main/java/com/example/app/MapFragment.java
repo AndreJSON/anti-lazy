@@ -2,19 +2,26 @@ package com.example.app;
 
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.FragmentActivity;
 import android.text.Layout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -40,9 +47,11 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
     View mView;
     ListView listView;
 
-    int[] icons = {R.drawable.ic_edit_location_black_24dp, R.drawable.ic_edit_location_black_24dp, R.drawable.ic_add_location_black_24dp};
-    String[] locationName = {"Gym", "McDonalds", "Add location"};
-    String[] address = {"Storgatan 17", "Lillgatan 2", ""};
+
+    //TODO data below should be retrieved from database instead
+    int[] icons = {R.drawable.ic_edit_location_black_24dp, R.drawable.ic_edit_location_black_24dp};
+    String[] locationName = {"Gym", "McDonalds"};
+    String[] address = {"Storgatan 17", "Lillgatan 2"};
 
 
     public MapFragment() {
@@ -122,5 +131,39 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         LatLng kista = new LatLng(59.402310, 17.945734);
         mMap.addMarker(new MarkerOptions().position(kista));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(kista, 13));
+
+        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void onMapClick(LatLng latLng) {
+                mMap.addMarker(new MarkerOptions().position(latLng));
+
+                final AlertDialog.Builder mBuilder = new AlertDialog.Builder(getActivity());
+                View alertView = LayoutInflater.from(getContext()).inflate(R.layout.custom_dialog, null);
+                final EditText locationName = (EditText) alertView.findViewById(R.id.etLocName);
+                final EditText locationAddress = (EditText) alertView.findViewById(R.id.etLocAddress);
+                CheckBox cbIsGood = (CheckBox) alertView.findViewById(R.id.cbIsGood);
+                Button add = (Button) alertView.findViewById(R.id.btnAdd);
+
+                mBuilder.setView(alertView);
+                final AlertDialog dialog = mBuilder.create();
+                dialog.show();
+
+                add.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if(!locationName.getText().toString().isEmpty() && !locationAddress.getText().toString().isEmpty()){
+                            Toast.makeText(getActivity(), "Added new location!", Toast.LENGTH_SHORT).show();
+
+                            //TODO add new values to database and update listview
+                            dialog.dismiss();
+                        }else {
+                            Toast.makeText(getActivity(), "Error, fill in all fields!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+
+            }
+        });
     }
 }
