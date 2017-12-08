@@ -4,8 +4,7 @@ var Schema = mongoose.Schema, ObjectId = Schema.ObjectId, models = {};
 var LocationSchema = new Schema({
 	name: String,
 	description: String,
-	lng: Number,
-	lat: Number
+	coords: [Number]
 });
 
 var LogEntrySchema = new Schema({
@@ -21,12 +20,13 @@ var RewardSchema = new Schema({
 });
 
 var UserSchema = new Schema({
-	name: {type: String, default: "Anonymous"},
-	points: {type: Number, default: 0},
+	name: String,
+	points: Number,
 	locations: [LocationSchema],
 	log: [LogEntrySchema],
 	rewards: [RewardSchema]
 });
+
 models.user = mongoose.model('user', UserSchema);
 
 module.exports = models;

@@ -3,10 +3,8 @@ mongoose.connect('mongodb://localhost/antilazy', { useMongoClient: true });
 var models = require('./models.js');
 var dbh = {};
 
-dbh.printUser = function (name) {
-	models.user.findOne({"name": name}, function (err, docs) {
-		console.log(docs);
-	});
+dbh.getUser = function (name, callback) {
+	models.user.findOne({"name": name}, callback);
 }
 
 module.exports = dbh;
