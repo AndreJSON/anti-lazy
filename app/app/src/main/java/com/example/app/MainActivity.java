@@ -17,10 +17,18 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements RewardsFragment.OnRewardsRequest {
 
     private Toolbar toolbar;
+    private ArrayList<Reward> rewards;
+
+    @Override
+    public ArrayList<Reward> onRewardsRequest() {
+        Log.i("LOG", "RewardsFragment asked for data!");
+        return rewards; //May or may not be extremely stupid to do this, as this is NOT a copy.
+    }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -63,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.content, new TodayFragment()).commit();
 
+        rewards = new ArrayList<>();
         getUser();
     }
 
@@ -73,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     getUser();
                 } catch (Exception e) {
-                    Log.e("getUser", "An error occurred.");
+                    Log.e("LOG-getUser", "An error occurred.");
                 }
             }
             private void getUser() throws Exception {
@@ -84,18 +93,19 @@ public class MainActivity extends AppCompatActivity {
                     InputStreamReader responseBodyReader =
                             new InputStreamReader(responseBody, "UTF-8");
                     JsonReader jsonReader = new JsonReader(responseBodyReader);
-                    Log.i("getUser", "Start parsing JSON.");
+                    Log.i("LOG-getUser", "Start parsing JSON.");
                     readJson(jsonReader);
                 } else {
-                    Log.i("getUser", "HTTP code not 200.");
+                    Log.i("LOG-getUser", "HTTP code not 200.");
                 }
-                Log.i("getUser", "Done");
+                Log.i("LOG-getUser", "Done");
             }
 
             private void readJson(JsonReader jsonReader) throws Exception {
                 Boolean success = false;
                 String key;
                 String name = "";
+                int points = 0;
                 jsonReader.beginObject(); // Start processing the JSON object
                 while (jsonReader.hasNext()) { // Loop through all keys
                     key = jsonReader.nextName();
@@ -107,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
                             key = jsonReader.nextName();
                             if (key.equals("name")) {
                                 name = jsonReader.nextString();
+                            } else if (key.equals("points")) {
+                                points = jsonReader.nextInt();
+                            } else if (key.equals("rewards")) {
+                                readRewardsArray(jsonReader);
                             } else {
                                 jsonReader.skipValue();
                             }
@@ -117,8 +131,36 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 jsonReader.endObject();
-                Log.i("getUser", success.toString());
-                Log.i("getUser", name);
+                Log.i("LOG-getUser", success.toString());
+                Log.i("LOG-getUser", name);
+                Log.i("LOG-getUser", points + "");
+            }
+
+            private void readRewardsArray(JsonReader jsonReader) throws Exception{
+                jsonReader.beginArray();
+                String key;
+                while (jsonReader.hasNext()) {
+                    String id = "";
+                    String description = "";
+                    int points = 0;
+                    jsonReader.beginObject();
+                    while (jsonReader.hasNext()) {
+                        key = jsonReader.nextName();
+                        if (key.equals("_id")) {
+                            id = jsonReader.nextString();
+                        } else if (key.equals("description")) {
+                            description = jsonReader.nextString();
+                        } else if (key.equals("points")) {
+                            points = jsonReader.nextInt();
+                        } else {
+                            Log.i("LOG-getUser", "Unexpected property in rewards array.");
+                            jsonReader.skipValue();
+                        }
+                    }
+                    jsonReader.endObject();
+                    rewards.add(new Reward(id, description, points));
+                }
+                jsonReader.endArray();
             }
         });
     }
