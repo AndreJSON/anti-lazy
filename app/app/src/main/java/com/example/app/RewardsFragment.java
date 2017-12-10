@@ -8,6 +8,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -18,6 +21,7 @@ import java.util.ArrayList;
 public class RewardsFragment extends Fragment {
 
     OnRewardsRequest dataPasser;
+    ArrayList<Reward> rewards;
 
     public RewardsFragment() {
         // Required empty public constructor
@@ -27,7 +31,7 @@ public class RewardsFragment extends Fragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         dataPasser = (OnRewardsRequest) context;
-        ArrayList<Reward> rewards = dataPasser.onRewardsRequest();
+        rewards = dataPasser.onRewardsRequest();
         Log.i("LOG", rewards.get(0).getId());
     }
 
@@ -38,7 +42,12 @@ public class RewardsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rewards, container, false);
+        View view = inflater.inflate(R.layout.fragment_rewards, container, false);
+        String[] stuff = {"apple", "banana", "pear"};
+        ListView listView = (ListView) view.findViewById(R.id.list);
+        ListAdapter listAdapter = new RewardsAdapter(listView.getContext(), stuff);
+        listView.setAdapter(listAdapter);
+        listView.setDivider(null);
+        return view;
     }
 }
