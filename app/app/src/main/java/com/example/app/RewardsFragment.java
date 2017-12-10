@@ -43,9 +43,8 @@ public class RewardsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_rewards, container, false);
-        String[] stuff = {"apple", "banana", "pear"};
         ListView listView = (ListView) view.findViewById(R.id.list);
-        ListAdapter listAdapter = new RewardsAdapter(listView.getContext(), stuff);
+        ListAdapter listAdapter = new RewardsAdapter(listView.getContext(), rewards);
         listView.setAdapter(listAdapter);
         listView.setDivider(null);
         return view;
